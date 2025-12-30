@@ -71,3 +71,27 @@
   }
 }
 */
+
+/* =========================
+   Remove / neutralize footer sitemap bar
+   ========================= */
+
+/* Hide the sitemap text */
+.site-footer .sitemap,
+.site-footer__sitemap {
+  display: none;
+}
+
+/* Make footer background white */
+.site-footer {
+  background-color: #ffffff !important;
+  border-top: none !important;
+}
+
+/* Remove extra vertical padding */
+.site-footer__inner,
+.site-footer .wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
