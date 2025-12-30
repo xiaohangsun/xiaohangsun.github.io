@@ -80,4 +80,23 @@
 footer {
   display: none !important;
 }
+/* =========================
+   Kill sitemap footer bar
+   ========================= */
+
+.footer__nav,
+.site-footer__nav,
+.page__footer-nav,
+.page__footer-follow,
+.page__footer-sitemap {
+  display: none !important;
+}
+
+/* Remove any leftover footer spacing or borders */
+.page__footer,
+.site-footer {
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 
