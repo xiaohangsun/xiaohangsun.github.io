@@ -41,3 +41,39 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* =========================
+   Navbar spacing (tweak)
+   ========================= */
+
+/* More space between top menu items */
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  padding-left: 1.15rem;
+  padding-right: 1.15rem;
+}
+
+/* Slight extra gap between items */
+.greedy-nav .visible-links li {
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+}
+
+/* Optional: a bit more vertical breathing room */
+.greedy-nav a {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+/* Optional: only apply bigger spacing on larger screens (uncomment if you prefer)
+@media (min-width: 64em) {
+  .greedy-nav .visible-links a {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .greedy-nav .visible-links li {
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+  }
+}
+*/
