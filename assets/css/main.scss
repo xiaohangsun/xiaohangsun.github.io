@@ -95,3 +95,44 @@
   padding-bottom: 0 !important;
 }
 
+/* =========================
+   Kill the grey footer sitemap bar (Minimal Mistakes)
+   ========================= */
+
+/* 1) Make footer area white (not grey) */
+.page__footer,
+.page__footer-follow,
+.page__footer-copyright,
+.site-footer,
+.site-footer__inner {
+  background: #fff !important;
+  border-top: 0 !important;
+}
+
+/* 2) Hide anything that links to sitemap */
+.page__footer a[href*="sitemap"],
+.site-footer a[href*="sitemap"],
+a[href$="sitemap.xml"] {
+  display: none !important;
+}
+
+/* 3) If the grey bar is just empty padding, collapse it */
+.page__footer,
+.page__footer-follow {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 4) If the bar is caused by a wrapper */
+.page__footer .wrapper,
+.site-footer .wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.sitemap,
+#sitemap,
+nav.sitemap {
+  display: none !important;
+}
