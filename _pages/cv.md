@@ -7,4 +7,5 @@ redirect_from:
   - /resume
 ---
 
-Find my latest CV [HERE] (https://xiaohangsun.github.io//cv/).
+Find my latest CV [HERE](https://xiaohangsun.github.io/cv/).
+
