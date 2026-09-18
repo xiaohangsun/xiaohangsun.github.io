@@ -7,42 +7,7 @@
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-
-    "syntax",
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-
-
-/* =========================================================
+ /* =========================================================
    GLOBAL
    ========================================================= */
 
@@ -52,72 +17,71 @@ html {
 
 body {
   background: #ffffff;
-  color: #222222;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
+  color: #252525;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 
 /* =========================================================
-   SIMPLE TOP HEADER
+   TOP NAVIGATION
    ========================================================= */
 
 .simple-masthead {
-  width: calc(100% - 4rem);
-  max-width: 1050px;
+  width: calc(100% - 3rem);
+  max-width: 900px;
   margin: 0 auto;
-  padding: 1.8rem 0;
+  padding: 1.7rem 0;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .simple-masthead a {
-  color: #222222;
+  color: #222;
   text-decoration: none;
 }
 
 .site-name {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
 }
 
 .simple-nav {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.5rem;
 }
 
 .simple-nav a {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #444444;
+  font-size: 0.88rem;
+  color: #444;
 }
 
-.simple-nav a:hover,
-.site-name:hover {
-  color: #1e407c;
+.simple-nav a:hover {
+  color: #17365d;
 }
 
 
 /* =========================================================
-   ONE PAGE CONTENT
+   MAIN PAGE
    ========================================================= */
 
 .onepage {
-  width: calc(100% - 4rem);
-  max-width: 1050px;
+  width: calc(100% - 3rem);
+  max-width: 900px;
   margin: 0 auto;
-  padding: 4.5rem 0 7rem;
+  padding: 4rem 0 7rem;
 }
 
 .onepage section {
-  margin-bottom: 7rem;
-  scroll-margin-top: 3rem;
+  margin-bottom: 6rem;
+  scroll-margin-top: 2rem;
 }
 
 
@@ -126,31 +90,36 @@ body {
    ========================================================= */
 
 .onepage h1 {
-  margin: 0 0 0.6rem;
-  font-size: 2.8rem;
-  line-height: 1.15;
+  margin: 0 0 0.45rem;
+  font-size: 2.25rem;
+  line-height: 1.1;
   font-weight: 600;
   letter-spacing: -0.025em;
+  color: #1e1e1e;
 }
 
 .onepage h2 {
-  margin: 0 0 2.5rem;
-  padding-bottom: 0.7rem;
+  margin: 0 0 2rem;
+  padding-bottom: 0.65rem;
 
-  font-size: 1.45rem;
-  line-height: 1.3;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 
-  border-bottom: 1px solid #dddddd;
+  color: #17365d;
+  border-bottom: 1px solid #d9dee5;
 }
 
 .onepage h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0 0 1rem;
 
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #555;
 }
 
 .onepage p {
@@ -159,7 +128,7 @@ body {
 }
 
 .onepage a {
-  color: #1e407c;
+  color: #244c7a;
   text-decoration: none;
 }
 
@@ -169,110 +138,168 @@ body {
 
 
 /* =========================================================
-   BIO / PROFILE
+   BIO HEADER
    ========================================================= */
 
 .bio-header {
   display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 3rem;
-  align-items: start;
+  grid-template-columns: 155px 1fr;
+  gap: 2.2rem;
+  align-items: center;
 }
 
 .profile-photo {
-  width: 210px;
+  width: 155px;
   height: auto;
   display: block;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .bio-intro {
-  padding-top: 0.25rem;
+  padding-top: 0;
 }
 
 .position {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-
-  color: #555555;
-  font-size: 1.05rem;
+  margin: 0.4rem 0 1.1rem;
+  color: #4d4d4d;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .profile-links a {
-  font-size: 0.95rem;
-}
-
-.bio-text {
-  max-width: 760px;
-  margin-top: 2.5rem;
-}
-
-
-/* =========================================================
-   RESEARCH ITEMS
-   ========================================================= */
-
-.research-item {
-  margin-bottom: 3.5rem;
-}
-
-.research-item:last-child {
-  margin-bottom: 0;
-}
-
-.research-meta {
-  margin-bottom: 0.7rem;
-
-  color: #666666;
-  font-size: 0.95rem;
-}
-
-.research-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
-  margin-top: 1rem;
-}
-
-.research-links a {
   font-size: 0.95rem;
   font-weight: 500;
 }
 
 
 /* =========================================================
-   SIMPLE LIST SECTIONS
+   BIO TEXT
    ========================================================= */
 
-.simple-entry {
-  margin-bottom: 2rem;
+.bio-text {
+  max-width: 760px;
+  margin-top: 2.4rem;
 }
 
-.simple-entry strong {
-  font-weight: 600;
-}
-
-.muted {
-  color: #666666;
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 
 /* =========================================================
-   FOOTER
+   RESEARCH INTERESTS + EDUCATION
    ========================================================= */
 
+.bio-details {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 4rem;
+
+  margin-top: 3.2rem;
+  padding-top: 2.4rem;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.bio-column ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.bio-column li {
+  margin-bottom: 0.55rem;
+}
+
+.education-list {
+  list-style-position: outside;
+}
+
+.education-list li {
+  margin-bottom: 0.9rem;
+}
+
+.education-list span {
+  display: block;
+  margin-top: 0.15rem;
+
+  color: #707070;
+  font-size: 0.92rem;
+}
+
+
+/* =========================================================
+   RESEARCH
+   ========================================================= */
+
+.research-subsection {
+  margin-bottom: 3.2rem;
+}
+
+.research-subsection > h3 {
+  margin-bottom: 1.3rem;
+}
+
+.research-item {
+  margin-bottom: 2.4rem;
+}
+
+.research-item h4 {
+  margin: 0 0 0.35rem;
+
+  font-size: 1.04rem;
+  line-height: 1.4;
+  font-weight: 600;
+
+  color: #222;
+}
+
+.research-meta {
+  margin: 0.25rem 0 0;
+
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.muted {
+  color: #8a8a8a;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-block {
+  max-width: 650px;
+}
+
+.contact-block p {
+  margin-bottom: 0.6rem;
+}
+
+.contact-block strong {
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   REMOVE OLD SIDEBAR / FOOTER
+   ========================================================= */
+
+.sidebar {
+  display: none !important;
+}
+
+.page__footer-follow {
+  display: none !important;
+}
+
 .page__footer,
-.page__footer-follow,
 .page__footer-copyright,
 .site-footer,
 .site-footer__inner {
@@ -280,30 +307,9 @@ body {
   border-top: 0 !important;
 }
 
-.page__footer-follow {
-  display: none !important;
-}
-
 .page__footer {
   margin-top: 0 !important;
   padding-top: 0 !important;
-}
-
-.site-footer .sitemap,
-.site-footer__sitemap,
-.sitemap,
-#sitemap,
-nav.sitemap {
-  display: none !important;
-}
-
-
-/* =========================================================
-   REMOVE OLD SIDEBAR SPACE
-   ========================================================= */
-
-.sidebar {
-  display: none !important;
 }
 
 
@@ -315,7 +321,7 @@ nav.sitemap {
 
   .simple-masthead {
     width: calc(100% - 2rem);
-    padding: 1.25rem 0;
+    padding: 1.2rem 0;
   }
 
   .simple-nav {
@@ -327,28 +333,29 @@ nav.sitemap {
     padding-top: 2.5rem;
   }
 
-  .onepage section {
-    margin-bottom: 5rem;
-  }
-
-  .onepage h1 {
-    font-size: 2.2rem;
-  }
-
-  .onepage h2 {
-    font-size: 1.3rem;
-  }
-
   .bio-header {
-    grid-template-columns: 1fr;
-    gap: 1.8rem;
+    grid-template-columns: 110px 1fr;
+    gap: 1.4rem;
   }
 
   .profile-photo {
-    width: 170px;
+    width: 110px;
   }
 
-  .profile-links {
-    gap: 0.9rem;
+  .onepage h1 {
+    font-size: 1.8rem;
+  }
+
+  .position {
+    font-size: 0.92rem;
+  }
+
+  .bio-details {
+    grid-template-columns: 1fr;
+    gap: 2.3rem;
+  }
+
+  .onepage section {
+    margin-bottom: 4.5rem;
   }
 }
