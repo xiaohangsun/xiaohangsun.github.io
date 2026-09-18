@@ -35,7 +35,36 @@ author_profile: false
 </section>
 
 <section id="research">
-...
+  <h2>Research</h2>
+
+  <div class="research-subsection">
+    <h3>Publications</h3>
+
+    <p class="muted">
+      Publications will be added here.
+    </p>
+  </div>
+
+  <div class="research-subsection">
+    <h3>Working Papers</h3>
+
+    <p class="muted">
+      Working papers will be added here.
+    </p>
+  </div>
+
+  <div class="research-subsection">
+    <h3>In Progress</h3>
+
+    <div class="research-item">
+      <h4>Political Representation and the Maoist Insurgency in India</h4>
+
+      <p class="research-meta">
+        In progress
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <section id="teaching">
