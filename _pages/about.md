@@ -1,4 +1,5 @@
 ---
+layout: onepage
 permalink: /
 title: ""
 author_profile: false
