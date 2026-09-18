@@ -8,7 +8,12 @@ author_profile: false
 <section id="bio">
 
   <div class="bio-header">
-    <img src="/images/profile.png" alt="Xiaohang Sun" class="profile-photo">
+
+    <img
+      src="/images/profile.png"
+      alt="Xiaohang Sun"
+      class="profile-photo"
+    >
 
     <div class="bio-intro">
       <h1>Xiaohang Sun</h1>
@@ -20,20 +25,63 @@ author_profile: false
 
       <p class="profile-links">
         <a href="/cv/">CV</a>
-        <a href="mailto:xqs5214@psu.edu">Email</a>
-        <a href="https://github.com/xiaohangsun">GitHub</a>
       </p>
     </div>
+
   </div>
 
   <div class="bio-text">
     <p>
-     My name is Xiaohang Sun. I am a PhD student in Political Science at Penn State. I study elections and civil conflicts in developing countries. My recent projects focus on political representation and the Maoist insurgency in India. Before joining Penn State, I earned dual bachelor’s degrees in international politics and economics from Shandong University, China, in 2024. I then pursued a master’s degree in international relations at Nanyang Technological University, Singapore.
+      My name is Xiaohang Sun. I am a PhD student in Political Science at Penn State.
+      I study elections and civil conflicts in developing countries. My recent projects
+      focus on political representation and the Maoist insurgency in India. Before joining
+      Penn State, I earned dual bachelor’s degrees in international politics and economics
+      from Shandong University, China, in 2024. I then pursued a master’s degree in
+      international relations at Nanyang Technological University, Singapore.
     </p>
   </div>
 
-</section>
 
+  <div class="bio-details">
+
+    <div class="bio-column">
+      <h3>Research Interests</h3>
+
+      <ul>
+        <li>Elections</li>
+        <li>Civil Conflict</li>
+        <li>South Asia and Southeast Asia</li>
+        <li>Causal Inference</li>
+      </ul>
+    </div>
+
+
+    <div class="bio-column">
+      <h3>Education</h3>
+
+      <ul class="education-list">
+
+        <li>
+          <strong>Ph.D. in Political Science</strong>, 2025–
+          <span>Pennsylvania State University</span>
+        </li>
+
+        <li>
+          <strong>M.Sc. in International Relations</strong>, 2025
+          <span>Nanyang Technological University</span>
+        </li>
+
+        <li>
+          <strong>B.A. in International Politics & Economics</strong>, 2024
+          <span>Shandong University</span>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</section>
 <section id="research">
   <h2>Research</h2>
 
@@ -99,5 +147,12 @@ author_profile: false
 </section>
 
 <section id="contact">
-...
+  <h2>Contact</h2>
+
+  <div class="contact-block">
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:xqs5214@psu.edu">xqs5214@psu.edu</a>
+    </p>
+  </div>
 </section>
