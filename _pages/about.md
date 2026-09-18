@@ -37,7 +37,11 @@ author_profile: false
 </section>
 
 <section id="resources">
-...
+  <h2>Resources</h2>
+
+  <p class="muted">
+    Resources will be added here in the future.
+  </p>
 </section>
 
 <section id="contact">
