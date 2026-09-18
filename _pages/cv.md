@@ -1,11 +1,7 @@
 ---
-layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+author_profile: false
 ---
 
-Will update my CV HERE.
-
+My CV will be available here soon.
