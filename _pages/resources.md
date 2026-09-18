@@ -1,6 +1,7 @@
 ---
-layout: archive
 title: "Resources"
 permalink: /resources/
-author_profile: true
+author_profile: false
 ---
+
+Resources will be added here in the future.
